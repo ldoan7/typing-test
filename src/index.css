@@ -1,16 +1,21 @@
 * {
   box-sizing: border-box;
+  font-family: 'Courier New';
+  color: white;
 }
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto minmax(300px, 1000px) auto;
-  border: 1px solid blue;
+  padding: 20px;
+  background-color: rgb(77, 77, 77);
+  /* border: 1px solid blue; */
 }
 
 @media screen and (max-width: 300px) {
@@ -21,19 +26,18 @@ body {
 
 header {
   grid-column: 2;
-  border: 2px solid green;
+  /* border: 1px solid green; */
 }
 
 .nav-item {
   margin: 0;
   padding: 5px;
   list-style-type: none;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .nav-link {
   text-decoration: none;
-  color: black;
 }
 
 main {
@@ -44,13 +48,13 @@ main {
 
 .container {
   grid-column: 2;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
 }
 
 .quick-settings {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 @media screen and (max-width: 650px) {
@@ -66,14 +70,20 @@ main {
 
 .quick-settings ul {
   display: flex;
+  align-items: center;
   padding: 5px;
   list-style-type: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.material-symbols-outlined {
+  padding: 5px;
+  /* border: 1px solid yellow; */
 }
 
 .quick-settings ul li {
   padding: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .body {
@@ -83,7 +93,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid chartreuse;
+  /* border: 1px solid chartreuse; */
 }
 
 .typing-test {
@@ -96,12 +106,13 @@ main {
   font-size: 32pt;
   /* border: none; */
   /* outline: none; */
-  /* resize: none; */
+  resize: none;
   overflow: hidden;
+  background-color: rgb(77, 77, 77);
 }
 
 footer {
   grid-column: 2;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
